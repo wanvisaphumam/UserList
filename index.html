@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>User List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+
   <header class="mb-5">
     <div class="container mt-5">
       <div class="d-flex justify-content-end">
@@ -24,34 +24,188 @@
 
       <h1 class="mb-4">Users</h1>
 
-      <div class="row">
+      <div class="row align-items-center gy-3">
         <div class="col-md-4">
           <input type="text" class="form-control form-control-lg" placeholder="Search Users">
         </div>
-        <div class="col-md-8">
-          <div class="col-md-8 d-flex justify-content-end align-items-center user-menu">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Reputation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-bg-primary rounded-3" href="#">New Users</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Editors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Moderators</a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-md-8 d-flex justify-content-md-end align-items-center flex-wrap user-menu">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reputation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-bg-primary rounded-3" href="#">New Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Editors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Moderators</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/darkmodetoggle.js"></script>  
+  <main>
+    <div class="container">
+      <div class="row">
+        <!-- John Doe -->
+        <div class="col-md-4">
+          <div class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: john@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>John Doe</h4>
+                  <h6>Troy MI</h6>
+                  <span class="badge bg-primary">nature</span>
+                  <span class="badge bg-primary">travel</span>
+                  <span class="badge bg-primary">sport</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lehla Nichols -->
+        <div class="col-md-4">
+          <div class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: lehla@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="" class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Lehla Nichols</h4>
+                  <h6>Fort Worth, TH</h6>
+                  <span class="badge bg-primary">Fashion</span>
+                  <span class="badge bg-primary">Tech</span>
+                  <span class="badge bg-primary">Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Annie Rice -->
+        <div class="col-md-4">
+          <div class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: annie@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Annie Rice</h4>
+                  <h6>Troy, MI</h6>
+                  <span class="badge bg-primary">Electronics</span>
+                  <span class="badge bg-primary">Tech</span>
+                  <span class="badge bg-primary">Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lorena Lalina Schuett -->
+        <div class="col-md-4">
+          <div class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: lorena@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://scontent.cdninstagram.com/v/t51.82787-19/610087068_18566785060004082_5061879105104369383_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=GIrTrucB4uMQ7kNvwG7h3mQ&_nc_oc=AdqF6LJiFGhcjv040prJXbC2DFS5QJ0BlcPZV_XIdSrVkH0TfkRp_VFun4HdmVfk7ve8M9kbJ3N8M3Z9TB5y6_uI&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=pQzshNIB3mgOB1cTOTbe8A&_nc_ss=7b689&oh=00_AQKROgxcPHjgmZm31DsUaKgodeRK4UIRoeMjET_ShH3iXg&oe=6ABF1D47" alt="" class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Lorena Lalina Schuett</h4>
+                  <h6>Bangkok, Thailand</h6>
+                  <span class="badge bg-primary">Actress</span>
+                  <span class="badge bg-primary">Book</span>
+                  <span class="badge bg-primary">Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Miu Natsha -->
+        <div class="col-md-4">
+          <div class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: miu@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://scontent.cdninstagram.com/v/t51.82787-19/753206047_18610624837053259_4674540174793955503_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDI0LkMzIn0%3D&_nc_ohc=1aEpGu3xDjMQ7kNvwH4aobc&_nc_oc=AdpMmmc0vMBTdH0uguOUBae1VTzr-GjztDREYXtTILd0ADW5IYmc17LnJz3Ur4A8Zl1HxW4ae0GkWtxq7y3kSzt3&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=4v4r_EYrM85mQ-_sp-5QnA&_nc_ss=7b689&oh=00_AQKFLFXWfPhdy2Ft-JVnnyumAfXn_TLvNe0xRUdKwxlRXQ&oe=6ABF0585" alt="" class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Miu Natsha</h4>
+                  <h6>Bangkok, Thailand</h6>
+                  <span class="badge bg-primary">Actress</span>
+                  <span class="badge bg-primary">Fashion</span>
+                  <span class="badge bg-primary">Business</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- yuta okkotsu -->
+        <div class="col-md-4">
+          <div class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: yuta@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://static.wikitide.net/deathbattlewiki/1/1d/Portrait.yutaokkotsu.png" alt="" class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Yuta Okkotsu</h4>
+                  <h6>Tokyo, Japan</h6>
+                  <span class="badge bg-primary">Student</span>
+                  <span class="badge bg-primary">Demon</span>
+                  <span class="badge bg-primary">Business</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/darkmodetoggle.js"></script>
+  <script>
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+  const popoverList = [...popoverTriggerList].map(
+    popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)
+  );
+  </script>
 </body>
 </html>
